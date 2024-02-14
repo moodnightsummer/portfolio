@@ -8,14 +8,19 @@ const classes = {
   contactName: "font-bold text-default mr-2",
 };
 
-export default function About() {
+export default function Contact() {
   return (
-    <div className="w-[600px] p-4">
-      <h2 className="h2-global">About Me</h2>
+    <div className="w-[600 px] p-4">
+      <h2 className="h2-global">Contact</h2>
       <p className="leading-relaxed">
         <div className={classes.wrap}>
-          {introductions.map((intro, idx) => (
-            <p key={idx}>{intro}</p>
+          {contacts.map((contact, idx) => (
+            <p key={idx} className="break-all">
+              <span className={classes.contactName}>{contact.name}</span>
+              <a href={contact.link} target="blank">
+                {contact.text || contact.link}
+              </a>
+            </p>
           ))}
         </div>
       </p>
