@@ -1,5 +1,5 @@
 const classes = {
-  subTitle: "text-2xl font-bold text-default tracking-wide",
+  subTitle: "text-2xl font-bold text-default tracking-wide mb-3",
 };
 
 const SubTitle = (props) => {

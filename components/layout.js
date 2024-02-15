@@ -1,15 +1,17 @@
-import Skill from "./skill";
-import Introduction from "./introductions";
-import Header from "./header";
-// 컨테이너
-export default function Layout({ children }) {
+import ContentLayout from "./contentLayout";
+import About from "./about";
+import Contact from "./contact";
+import Profile from "./profile";
+
+export default function Layout(children) {
   return (
     <>
-      <Header />
-      <Introduction />
-
-      <div>{children}</div>
-      <Skill />
+      <div className="custom-width custom-height p-4 bg-gray-300">
+        <Profile />
+        <ContentLayout title="Contact">
+          <Contact />
+        </ContentLayout>
+      </div>
     </>
   );
 }

@@ -1,9 +1,31 @@
-// 컨테이너
+import skills from "../contents/skills";
+import SubTitle from "./subTitle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+
+const classes = {
+  profileWrap: "grid items-center gap-y-10 lg:max-w-7xl",
+  wrap: "mt-4",
+  contactName: "font-bold text-default mr-2",
+};
+
 export default function Skill() {
   return (
     <>
-      <h2 className="h2-global">Skills</h2>
-      <h3>사용하는 언어와 프레임워크</h3>
+      <h3 className={SubTitle}>사용하는 언어와 프레임워크</h3>
+      <div className={classes.wrap}>
+        {skills.map((skill, index) => (
+          <div key={index} className={classes.wrap}>
+            <SubTitle key={index}>{skill.name}</SubTitle>
+            {skill.items.map((item, idx) => (
+              <p key={idx}>
+                <FontAwesomeIcon icon={faCode} />
+                {item}
+              </p>
+            ))}
+          </div>
+        ))}
+      </div>
     </>
   );
 }
