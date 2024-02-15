@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-width {
+  width: 350px;
+}
+
 .h2-global {
   @apply text-4xl text-blue-500 font-bold mb-4;
 }
