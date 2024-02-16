@@ -19,7 +19,9 @@ export default function Skill() {
             <SubTitle key={index}>{skill.name}</SubTitle>
             {skill.items.map((item, idx) => (
               <p key={idx}>
-                <FontAwesomeIcon icon={faCode} />
+                <span className="mr-3">
+                  <FontAwesomeIcon icon={faCode} />
+                </span>
                 {item}
               </p>
             ))}

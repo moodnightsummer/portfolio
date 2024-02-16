@@ -15,9 +15,10 @@ export default function Profile() {
         <h1 className="title-font sm:text-2xl text-3xl mb-4 font-medium text-gray-900">
           {profile.nameEN}
         </h1>
-        <p className="mb-8 leading-relaxed">
+        <span className="leading-relaxed">
           {profile.nameKR} | {profile.age}
-        </p>
+        </span>
+        <span>{profile.position}</span>
       </div>
     </div>
   );
