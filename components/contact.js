@@ -12,6 +12,7 @@ export default function Contact() {
       {contacts.map((contact, idx) => (
         <p key={idx} className="break-all">
           <span className={classes.contactName}>{contact.name}</span>
+          <span>: </span>
           <a href={contact.link} target="blank">
             {contact.text || contact.link}
           </a>
