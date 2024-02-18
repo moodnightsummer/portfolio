@@ -3,7 +3,7 @@ import education from "@/contents/education";
 const classes = {
   profileWrap: "grid items-center gap-y-10 lg:max-w-7xl",
   wrap: "mt-4",
-  smallText: "text-sm mb-2",
+  smallText: "mb-2 text-sm text-gray-500",
 };
 
 export default function Education() {
