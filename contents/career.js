@@ -3,6 +3,7 @@ const data = [
     companyName: "에이아이에스",
     period: "2021-12 ~ 2023-12",
     occupation: "백엔드 개발자",
+    link: "ais",
     rank: "주임",
     description: [
       "스마트팜 스타트업인 에이아이에스에서 주로 서버 관리 및 API 개발, 비즈니스 로직 업무를 수행하였습니다.",
