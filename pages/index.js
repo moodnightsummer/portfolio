@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="flex flex-row">
-      <div className="md:col-span-1 p-4 bg-gray-200 h-screen flex-shrink-0">
+    <div className="flex">
+      <div className="md:col-span-1 p-4 bg-gray-200 flex-shrink-0 sticky top-0 z-50">
         <Layout />
       </div>
       <div className="md:col-span-1 m-8 basis-3/6">
