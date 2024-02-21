@@ -1,4 +1,6 @@
+import { faUnderline } from "@fortawesome/free-solid-svg-icons";
 import career from "../contents/career";
+import Link from "next/link";
 
 const classes = {
   wrap: "mt-4",
@@ -15,7 +17,11 @@ export default function Career() {
             <p key={idx} className={classes.smallText}>
               {item.period}
             </p>
-            <p key={idx}>{item.companyName}</p>
+            <p key={idx}>
+              <Link href={item.link} className="underlinedText">
+                {item.companyName}
+              </Link>
+            </p>
             <p key={idx} className={classes.smallText}>
               {item.occupation} | {item.rank}
             </p>

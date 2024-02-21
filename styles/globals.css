@@ -9,3 +9,8 @@
 .h2-global {
   @apply text-2xl font-bold mb-4;
 }
+
+.underlinedText {
+  text-decoration: underline;
+  font-weight: bold;
+}
