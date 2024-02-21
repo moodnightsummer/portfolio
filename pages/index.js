@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="flex">
-      <div className="md:col-span-1 p-4 bg-gray-200 flex-shrink-0 sticky top-0 z-50">
+    <div className="flex flex-col md:flex-row">
+      <div className="md:col-span-1 p-4 bg-gray-200 h-screen md:flex-shrink-0 z-50">
         <Layout />
       </div>
-      <div className="md:col-span-1 m-8 basis-3/6">
+      <div className="md:col-span-1 m-8 basis-full md:basis-3/6">
         <ContentLayout title="About Me">
           <About />
         </ContentLayout>
@@ -22,7 +22,7 @@ export default function Home() {
           <Skill />
         </ContentLayout>
       </div>
-      <div className="md:col-span-1 m-8 basis-2/6">
+      <div className="md:col-span-1 m-8 basis-full md:basis-2/6">
         <ContentLayout title="Education">
           <Education />
         </ContentLayout>
