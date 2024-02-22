@@ -5,6 +5,7 @@ import Profile from "./profile";
 export default function Layout(children) {
   return (
     <div className="h-screen p-4 flex-col flex justify-between items-center">
+      <title>신재일 포트폴리오</title>
       <Profile />
       <ContentLayout title="Contact" isUnderbar={false}>
         <Contact />
