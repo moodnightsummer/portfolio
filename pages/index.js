@@ -11,24 +11,36 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div className="flex flex-col md:flex-row">
-      <div className="md:col-span-1 p-4 bg-gray-200 h-screen md:flex-shrink-0 z-50">
+      {/* Layout 영역 */}
+      <div className="md:col-span-1 p-4 bg-gray-200 md:w-2/8 h-full md:flex-shrink-0 z-50 sticky top-0">
         <Layout />
       </div>
-      <div className="md:col-span-1 m-8 basis-full md:basis-3/6">
-        <ContentLayout title="About Me">
-          <About />
-        </ContentLayout>
-        <ContentLayout title="Skills">
-          <Skill />
-        </ContentLayout>
+
+      {/* 나머지 두 개의 영역 */}
+      <div className="md:col-span-1 flex-1 flex flex-col m-8">
+        <div className="mb-8">
+          <ContentLayout title="About Me">
+            <About />
+          </ContentLayout>
+        </div>
+        <div>
+          <ContentLayout title="Skills">
+            <Skill />
+          </ContentLayout>
+        </div>
       </div>
-      <div className="md:col-span-1 m-8 basis-full md:basis-2/6">
-        <ContentLayout title="Education">
-          <Education />
-        </ContentLayout>
-        <ContentLayout title="Career">
-          <Career />
-        </ContentLayout>
+
+      <div className="md:col-span-1 flex-1 flex flex-col m-8">
+        <div className="mb-8">
+          <ContentLayout title="Education">
+            <Education />
+          </ContentLayout>
+        </div>
+        <div>
+          <ContentLayout title="Career">
+            <Career />
+          </ContentLayout>
+        </div>
       </div>
     </div>
   );
