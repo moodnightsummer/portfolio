@@ -5,7 +5,7 @@ import Link from "next/link";
 const classes = {
   wrap: "mt-4",
   titleText: "text-lg font-bold",
-  smallText: "mb-1 text-sm text-gray-500",
+  smallText: "mb-1 text-sm text-gray-500 mt-4 space-y-6",
 };
 
 export default function Career() {

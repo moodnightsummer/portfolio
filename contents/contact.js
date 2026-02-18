@@ -2,7 +2,7 @@ const data = [
   {
     name: "Email",
     link: "mailto:moodnightsummer@naver.com",
-    text: "moodnightsummer@naver.com",
+    text: "devzhoiz@gmail.com",
   },
   {
     name: "Phone",

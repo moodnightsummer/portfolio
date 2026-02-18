@@ -1,6 +1,6 @@
 import CareerLayout from "@/components/careerLayout";
 import Layout from "@/components/layout";
-export default function Ais() {
+export default function Nana() {
   return (
     <div className="flex flex-col md:flex-row sticky top-0">
       {/* Layout 영역 */}
@@ -11,7 +11,7 @@ export default function Ais() {
       {/* 나머지 두 개의 영역 */}
       <div className="md:col-span-1 flex-1 flex flex-col m-8">
         <div className="mb-8">
-          <CareerLayout />
+          <CareerLayout link="nana" />
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ export default function Ais() {
       {/* 나머지 두 개의 영역 */}
       <div className="md:col-span-1 flex-1 flex flex-col m-8">
         <div className="mb-8">
-          <CareerLayout />
+          <CareerLayout link="ais" />
         </div>
       </div>
     </div>

@@ -8,20 +8,20 @@ const classes = {
   smallText: "text-sm text-gray-400 font-light",
 };
 
-export default function CareerLayout(children) {
+export default function CareerLayout({ link }) {
+  const item = Career.find((v) => v.link === link);
+
+  if (!item) return null;
+
   return (
-    <div className={classes.wrap}>
-      {Career.map((item, idx) => (
-        <div key={idx}>
-          <p key={idx} className={classes.titleText}>
-            {item.companyName}
-          </p>
-          <p key={idx} className={classes.periodText}>
-            {item.period}
-          </p>
-        </div>
-      ))}
-      <Job />
+    <div className="mt-4">
+      <p className="text-2xl tracking-tighter font-normal">
+        {item.companyName}
+      </p>
+
+      <p className="text-xl text-gray-400 font-light mb-4">{item.period}</p>
+
+      <Job data={item} />
     </div>
   );
 }
